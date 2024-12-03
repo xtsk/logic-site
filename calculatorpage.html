@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Project </title>
+    <link rel="stylesheet" href="calculatorpage.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h3>Calculator Project <sub> LogicSite </sub></h3>
+        <section class="screen">
+            <div id="previous" class="previous" data-operand-previous></div>
+            <div id="current" class="current" data-operand-current></div>
+        </section>
+        <section class="calc-btn-row">
+            <div class="calc_btn_row">
+                <button class="calc_btn double" onclick="deleteText()">C</button>
+                <button class="calc_btn" onclick="backSpaceFunction()">del</button>
+                <button class="calc_btn" onclick="displayText('~')">~</button>
+            </div>
+            <div class="calc_btn_row">
+                <button class="calc_btn" onclick="displayText('→')">→</button>
+                <button class="calc_btn" onclick="displayText('↔')">↔</button>
+                <button class="calc_btn" onclick="displayText('∧')">∧</button>
+                <button class="calc_btn" onclick="displayText('∨')">∨</button>
+            </div>
+            <div class="calc_btn_row">
+                <button class="calc_btn" onclick="displayText('(')">(</button>
+                <button class="calc_btn" onclick="displayText(')')">)</button>
+                <button class="calc_btn " onclick="displayText('x')">x</button>
+                <button class="calc_btn " onclick="displayText('≡')">≡</button>
+            </div>
+            <div class="calc_btn_row">
+                <button class="calc_btn double" onclick="calculate()">calc</button>
+                <button class="calc_btn" onclick="displayText('T')">T</button>
+                <button class="calc_btn" onclick="displayText('F')">F</button>
+            </div>
+        </section>
+    </div>
+    <script src="calculatorpage.js"></script>
+</body>
+
+</html>
